@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+    <link rel="stylesheet" href="../rock-paper-scisssor game/style.css"> 
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div>
+        <!-- cos we used addeventlist instead of onclick -->
+    <button class="move-btn js-rock-btn"  
+    //onclick="playGame('Rock'); " 
+    >
+    <img src="../images/rock-emoji.png" alt="rock-emoji" class="move-icon" title="Rock img">    
+    </button>
+
+    <button class="move-btn js-paper-btn" 
+    ">
+    <img src="../images/paper-emoji.png" alt="paper-emoji" class="move-icon" title="Paper-emoji img">
+    </button>
+
+    <button class="move-btn js-scissor-btn" 
+    ">
+    <img src="../images/scissor-emoji.png" alt="scissors-emoji" class="move-icon" title="Scissor img">
+    </button>
+    
+    <p class="js-result result"></p>
+
+    <p class="js-moves"></p>
+
+    <p class="js-para scores"></p>
+
+    <button class="reset-btn" onclick="
+    status.wins =0;
+    status.losses = 0;
+    status.ties = 0;
+    localStorage.removeItem('status');   //to remove the previously stored items in the localStorage
+    
+    updatedScore();
+
+    ">Reset Score</button>
+
+    <button class="reset-btn" onclick="autoPlay()">Auto Play</button>
+    </div>
+
+    <script src="../rock-paper-scisssor game/script.js"></script> 
+</body>
+</html>

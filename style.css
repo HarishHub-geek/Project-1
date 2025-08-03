@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+.move-icon {
+  height: 100px;
+  background: transparent;
+  padding: 10px;
+}
+.move-btn {
+  background: transparent;
+  border: 4px solid rgb(236, 210, 210);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 25px;
+  margin-right: 10px;
+}
+.result {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.scores {
+  margin-top: 60px;
+  font-size: 20px;
+}
+.reset-btn {
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  padding: 10px 15px;
+}
+button {
+  cursor: pointer;
+}
