@@ -96,9 +96,9 @@ let status = JSON.parse(localStorage.getItem('status')) || {
             document.querySelector('.js-result').innerHTML = result ;
 
             document.querySelector('.js-moves').innerHTML = `YOU     
-            <img src="../images/${playerMove}-emoji.png" alt="rock-emoji" class="move-icon">
+            <img src="./images/${playerMove}-emoji.png" alt="rock-emoji" class="move-icon">
             
-            <img src="../images/${computerMove}-emoji.png" alt="rock-emoji" class="move-icon">COMPUTER
+            <img src="./images/${computerMove}-emoji.png" alt="rock-emoji" class="move-icon">COMPUTER
              `;
 
             //please check for computerMove's and our image names should be the same due to ${xxx} 
